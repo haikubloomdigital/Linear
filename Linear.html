@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO META TAGS -->
+    <title>Linear Creative - Percetakan Online & Jasa Desain Kreatif di Jogja</title>
+    <meta name="description" content="Percetakan online di Jogja melayani cetak banner, brosur, nota, undangan, merchandise, kartu nama, ID card, stempel, lanyard & jasa desain grafis. Cepat, terjangkau, profesional.">
+    <meta name="keywords" content="percetakan jogja, percetakan online jogja, cetak banner jogja, jasa desain grafis jogja, cetak brosur jogja, cetak nota jogja, cetak undangan jogja, kartu nama jogja, stempel jogja, merchandise jogja">
+    <meta name="author" content="Linear Creative">
+    <meta name="robots" content="index, follow">
+    
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Linear Creative - Percetakan Online & Jasa Desain Kreatif di Jogja">
+    <meta property="og:description" content="Percetakan online di Jogja melayani berbagai kebutuhan cetak & desain grafis profesional.">
+    <meta property="og:type" content="website">
+    
+    <!-- BRAND IDENTITY: WARNA & TIPOGRAFI -->
+    <!-- Warna utama: Ungu premium (#9D00B5) -->
+    <!-- Warna sekunder: Pink energik (#E2008E) -->
+    <!-- Warna netral: Abu-abu (#4b5563) -->
+    <!-- Font: Poppins (sans-serif modern) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- TAILWIND CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'linear-purple': '#9D00B5',
+                        'linear-pink': '#E2008E',
+                        'linear-gray': '#4b5563'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/6281231426842?text=Halo%20Linear%20Creative,%20saya%20ingin%20konsultasi%20tentang%20jasa%20percetakan"
+       class="whatsapp-float" target="_blank" aria-label="Hubungi via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- HEADER & NAVIGASI -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- LOGO -->
+                <div class="logo">
+                    <img src="assets/LINEAR LOGO.png" alt="Linear Creative Logo" class="h-12 w-auto">
+                    <span class="logo-subtitle">Percetakan & Desain Kreatif</span>
+                </div>
+                
+                <!-- DESKTOP NAVIGASI -->
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="#home" class="active">Beranda</a></li>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#services">Layanan</a></li>
+                        <li><a href="#portfolio">Portofolio</a></li>
+                        <li><a href="#order">Cara Pesan</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- MOBILE MENU TOGGLE -->
+                <button class="menu-toggle" aria-label="Toggle menu" id="menuToggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- MOBILE NAVIGASI -->
+        <nav class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="#home" class="active">Beranda</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#services">Layanan</a></li>
+                <li><a href="#portfolio">Portofolio</a></li>
+                <li><a href="#order">Cara Pesan</a></li>
+                <li><a href="#clients">Klien</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero min-h-screen bg-gradient-to-br from-linear-purple/10 via-white to-linear-pink/10 flex items-center relative overflow-hidden" id="home">
+        <div class="container mx-auto px-4 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div class="text-center lg:text-left">
+                    <div class="inline-block mb-6">
+                        <img src="assets/LINEAR LOGO.png" alt="Linear Creative" class="h-16 lg:h-20 w-auto">
+                    </div>
+                    <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                        Creative Printing & Design Services in Jogja
+                    </h1>
+                    <p class="text-xl text-linear-gray mb-8 max-w-2xl mx-auto lg:mx-0">
+                        Fast, affordable, and professional printing solutions for your business needs. From business cards to large format printing, we deliver quality with creativity.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
+                        <a href="https://wa.me/6281231426842?text=Halo%20Linear%20Creative,%20saya%20ingin%20pesan%20jasa%20percetakan"
+                           class="bg-linear-purple hover:bg-purple-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+                           target="_blank">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </a>
+                        <a href="#portfolio"
+                           class="bg-linear-pink hover:bg-pink-600 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                            View Portfolio
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Content - Service Showcase -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                    <!-- Business Cards -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                        <div class="w-16 h-16 bg-linear-purple rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-id-card text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2 text-center">Business Cards</h3>
+                        <p class="text-linear-gray text-sm text-center">Premium quality business cards with custom designs</p>
+                    </div>
+
+                    <!-- A3+ Digital Printing -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                        <div class="w-16 h-16 bg-linear-pink rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-print text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2 text-center">A3+ Digital Printing</h3>
+                        <p class="text-linear-gray text-sm text-center">High-quality digital printing for posters and banners</p>
+                    </div>
+
+                    <!-- Lanyard Printing -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                        <div class="w-16 h-16 bg-linear-purple rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-stream text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2 text-center">Lanyard Printing</h3>
+                        <p class="text-linear-gray text-sm text-center">Custom lanyards with your brand and design</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Floating Elements -->
+            <div class="absolute top-20 left-10 w-20 h-20 bg-linear-purple rounded-full shadow-lg flex items-center justify-center animate-bounce">
+                <i class="fas fa-paint-brush text-white text-2xl"></i>
+            </div>
+            <div class="absolute top-40 right-16 w-16 h-16 bg-linear-pink rounded-full shadow-lg flex items-center justify-center animate-pulse">
+                <i class="fas fa-palette text-white text-xl"></i>
+            </div>
+            <div class="absolute bottom-32 left-20 w-18 h-18 bg-linear-purple rounded-full shadow-lg flex items-center justify-center animate-bounce" style="animation-delay: 1s;">
+                <i class="fas fa-print text-white text-xl"></i>
+            </div>
+            <div class="absolute bottom-20 right-10 w-14 h-14 bg-linear-pink rounded-full shadow-lg flex items-center justify-center animate-pulse" style="animation-delay: 0.5s;">
+                <i class="fas fa-desktop text-white text-lg"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- TENTANG KAMI -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Tentang Linear Creative</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p><strong>Linear Creative</strong> adalah percetakan online di Jogja yang melayani berbagai kebutuhan cetak seperti brosur, banner, nota, poster, merchandise, kartu nama, ID card, stempel, lanyard, dan lainnya.</p>
+                    
+                    <p>Pemesanan dilakukan secara online melalui Shopee atau WhatsApp dengan opsi pengiriman kurir, COD, atau ambil langsung di Home Store.</p>
+                    
+                    <p>Kami juga menyediakan jasa desain untuk kebutuhan cetak, media sosial, marketing, dan keperluan kreatif lainnya.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-bolt"></i>
+                            <span>Spesialis cetak 1 hari jadi</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>Gratis ongkir Jogja - Bantul - sekitarnya</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-headset"></i>
+                            <span>Pelayanan cepat & online</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="MATERI/FOTO PRODUK/DSC05185.JPG" alt="Ruang Produksi Percetakan Linear Creative" class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LAYANAN -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Layanan Kami</h2>
+            <p class="section-subtitle">Berbagai solusi percetakan dan desain untuk kebutuhan bisnis Anda</p>
+
+            <div class="services-grid">
+                <!-- Cetak Berbagai Macam Kertas A3+ -->
+                <div class="service-card-interactive">
+                    <div class="card-image">
+                        <img src="MATERI/POSTER PROMOSI/A3.jpg" alt="Cetak Berbagai Macam Kertas A3+" class="w-full h-full object-cover">
+                    </div>
+                    <div class="card-content">
+                        <h3>Cetak Berbagai Macam Kertas A3+</h3>
+                        <div class="card-details">
+                            <p><strong>Tersedia Berbagai Macam Kertas</strong></p>
+                            <p>Area Cetak A3 Extension 31,5 x 47 Cm</p>
+                            <p>Min. Order 5 Lembar</p>
+                            <p>Proses Pengerjaan 1 Hari (Tergantung Antrian)</p>
+                            <p>Bisa Diantar / COD (Syarat Ketentuan Berlaku)</p>
+                        </div>
+                        <a href="https://wa.me/6281231426842?text=Halo,%20saya%20ingin%20tanya%20tentang%20cetak%20berbagai%20macam%20kertas%20A3%2B"
+                           class="service-link" target="_blank">Tanya harga <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Cetak Banner -->
+                <div class="service-card-interactive">
+                    <div class="card-image">
+                        <img src="MATERI/POSTER PROMOSI/BANNER.jpg" alt="Cetak Banner" class="w-full h-full object-cover">
+                    </div>
+                    <div class="card-content">
+                        <h3>Cetak Banner</h3>
+                        <div class="card-details">
+                            <p><strong>Tersedia Bahan 280gr, 340gr, 440gr, Luster dan Masih Banyak Lagi</strong></p>
+                            <p>Bisa Juga Cetak X-Banner, Roll Banner, dan Sejenisnya</p>
+                            <p>Pengerjaan 1 Hari (Masuk File Siap Cetak Pagi, Malam Bisa Jadi)</p>
+                            <p>Bisa Diantar / COD (Syarat Ketentuan Berlaku)</p>
+                        </div>
+                        <a href="https://wa.me/6281231426842?text=Halo,%20saya%20ingin%20tanya%20tentang%20cetak%20banner"
+                           class="service-link" target="_blank">Tanya harga <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Cetak Nota -->
+                <div class="service-card-interactive">
+                    <div class="card-image">
+                        <img src="MATERI/POSTER PROMOSI/CETAK NOTA.jpg" alt="Cetak Nota" class="w-full h-full object-cover">
+                    </div>
+                    <div class="card-content">
+                        <h3>Cetak Nota</h3>
+                        <div class="card-details">
+                            <p><strong>Tersedia Berbagai Macam Kertas HVS, NCR, Dll</strong></p>
+                            <p>Proses Pengerjaan 1-4 Hari (Tergantung Antrian)</p>
+                            <p>Minimal Pemesanan 1 RIM</p>
+                            <p>Bisa Diantar / COD (Syarat Ketentuan Berlaku)</p>
+                        </div>
+                        <a href="https://wa.me/6281231426842?text=Halo,%20saya%20ingin%20tanya%20tentang%20cetak%20nota"
+                           class="service-link" target="_blank">Tanya harga <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Jasa Desain -->
+                <div class="service-card-interactive">
+                    <div class="card-image">
+                        <img src="MATERI/POSTER PROMOSI/JASA DESAIN.jpg" alt="Jasa Desain" class="w-full h-full object-cover">
+                    </div>
+                    <div class="card-content">
+                        <h3>Jasa Desain</h3>
+                        <div class="card-details">
+                            <p><strong>Menerima Jasa Desain Banner, Logo, CV, Brosur, Poster, Baliho Dll</strong></p>
+                            <p>Proses Pengerjaan 1-3 Hari (Tergantung Antrian)</p>
+                            <p>Menerima Jasa Rebranding Brand Identity</p>
+                            <p>Bergaransi dan Bisa Revisi Sesuai Kesepakatan</p>
+                        </div>
+                        <a href="https://wa.me/6281231426842?text=Halo,%20saya%20ingin%20tanya%20tentang%20jasa%20desain"
+                           class="service-link" target="_blank">Tanya harga <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Bikin Kaos -->
+                <div class="service-card-interactive">
+                    <div class="card-image">
+                        <img src="MATERI/POSTER PROMOSI/KAOS.jpg" alt="Bikin Kaos" class="w-full h-full object-cover">
+                    </div>
+                    <div class="card-content">
+                        <h3>Bikin Kaos</h3>
+                        <div class="card-details">
+                            <p><strong>Menerima Pembuatan Kaos Satuan atau Skala Besar</strong></p>
+                            <p>Bahan Cotton Combed</p>
+                            <p>Bisa DTF atau Sablon Plastisol</p>
+                            <p>Bisa Diantar / COD (Syarat Ketentuan Berlaku)</p>
+                        </div>
+                        <a href="https://wa.me/6281231426842?text=Halo,%20saya%20ingin%20tanya%20tentang%20bikin%20kaos"
+                           class="service-link" target="_blank">Tanya harga <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Cetak Kartu Nama -->
+                <div class="service-card-interactive">
+                    <div class="card-image">
+                        <img src="MATERI/POSTER PROMOSI/KARTU NAMA.jpg" alt="Cetak Kartu Nama" class="w-full h-full object-cover">
+                    </div>
+                    <div class="card-content">
+                        <h3>Cetak Kartu Nama</h3>
+                        <div class="card-details">
+                            <p><strong>Tersedia Berbagai Macam Bahan Kartu Nama</strong></p>
+                            <p>Bisa 1 Muka atau 2 Muka</p>
+                            <p>Minimal Order 1 Box</p>
+                            <p>Proses Pengerjaan 1-2 Hari (Tergantung Antrian)</p>
+                            <p>Bisa Diantar / COD (Syarat Ketentuan Berlaku)</p>
+                        </div>
+                        <a href="https://wa.me/6281231426842?text=Halo,%20saya%20ingin%20tanya%20tentang%20cetak%20kartu%20nama"
+                           class="service-link" target="_blank">Tanya harga <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Cetak Kupon / Karcis -->
+                <div class="service-card-interactive">
+                    <div class="card-image">
+                        <img src="MATERI/POSTER PROMOSI/KUPON.jpg" alt="Cetak Kupon / Karcis" class="w-full h-full object-cover">
+                    </div>
+                    <div class="card-content">
+                        <h3>Cetak Kupon / Karcis</h3>
+                        <div class="card-details">
+                            <p><strong>Tersedia Berbagai Macam Bahan</strong></p>
+                            <p>Proses Pengerjaan 1-4 Hari (Tergantung Antrian)</p>
+                            <p>Sudah Include Nomerator dan Porporasi</p>
+                            <p>Minimal Order 1 RIM</p>
+                            <p>Bisa Diantar / COD (Syarat Ketentuan Berlaku)</p>
+                        </div>
+                        <a href="https://wa.me/6281231426842?text=Halo,%20saya%20ingin%20tanya%20tentang%20cetak%20kupon%20karcis"
+                           class="service-link" target="_blank">Tanya harga <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Cetak Lanyard -->
+                <div class="service-card-interactive">
+                    <div class="card-image">
+                        <img src="MATERI/POSTER PROMOSI/LANYARD.jpg" alt="Cetak Lanyard" class="w-full h-full object-cover">
+                    </div>
+                    <div class="card-content">
+                        <h3>Cetak Lanyard</h3>
+                        <div class="card-details">
+                            <p><strong>Memakai Bahan Tissue</strong></p>
+                            <p>Bisa 1 Muka atau 2 Muka</p>
+                            <p>Bisa Satuan</p>
+                            <p>Proses Pengerjaan 1-4 Hari (Tergantung Antrian)</p>
+                            <p>Bisa Memesan Paket dengan ID Card</p>
+                            <p>Bisa Diantar / COD (Syarat Ketentuan Berlaku)</p>
+                        </div>
+                        <a href="https://wa.me/6281231426842?text=Halo,%20saya%20ingin%20tanya%20tentang%20cetak%20lanyard"
+                           class="service-link" target="_blank">Tanya harga <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services-cta">
+                <a href="#contact" class="btn btn-primary">Konsultasi Gratis</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERI PRODUK -->
+    <section class="portfolio bg-gradient-to-br from-linear-pink/5 to-linear-purple/5" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Galeri Produk</h2>
+            <p class="section-subtitle">Koleksi hasil karya dan produk cetakan kami</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/1.jpg" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/2.jpg" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/3.jpg" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/4.jpg" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/5.jpg" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/6.jpg" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/7.jpg" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/8.jpg" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/9.jpg" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/10.jpg" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/11.jpg" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/12.jpg" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/13.jpg" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/14.jpg" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/15.jpg" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/16.jpg" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/17.jpg" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/18.jpg" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/19.jpg" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/20.jpg" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/21.jpg" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/22.jpg" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/23.jpg" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/24.jpg" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/25.jpg" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/26.jpg" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/27.jpg" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/DSC05081.JPG" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/DSC05118.JPG" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/DSC05154.JPG" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/DSC05185.JPG" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/DSC05188.JPG" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/DSC05207.JPG" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/DSC05208.JPG" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/DSC05247.JPG" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/DSC05254.JPG" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/DSC05255.JPG" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/DSC05257.JPG" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/DSC05260.JPG" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/DSC05261.JPG" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/DSC05273.JPG" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/DSC05275.JPG" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/DSC05278.JPG" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/DSC05283.JPG" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/DSC05309.JPG" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/DSC05321.JPG" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/DSC05323.JPG" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/DSC05340.JPG" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="MATERI/FOTO PRODUK/DSC05344.JPG" alt="Produk Linear Creative" class="gallery-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- CARA PESAN -->
+    <section class="order-process" id="order">
+        <div class="container">
+            <h2 class="section-title">Cara Pesan Mudah</h2>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Pilih Produk</h3>
+                    <p>Pilih produk yang Anda butuhkan dari katalog kami</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Hubungi Kami</h3>
+                    <p>Hubungi via WhatsApp atau kunjungi toko Shopee kami</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Kirim Desain</h3>
+                    <p>Kirim desain yang sudah jadi atau konsultasi jasa desain</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Proses Cetak</h3>
+                    <p>Kami proses cetak dengan kualitas terbaik</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <h3>Selesai & Kirim</h3>
+                    <p>Produk siap diambil atau dikirim ke alamat Anda</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MITRA -->
+    <section class="clients py-16 bg-gray-50" id="clients">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-12">Telah Dipercaya Oleh</h2>
+
+            <!-- Scrolling Logo Carousel -->
+            <div class="relative overflow-hidden">
+                <div class="flex animate-scroll">
+                    <!-- First set of all logos -->
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/AUTHEEZ BRAND.png" alt="AUTHEEZ BRAND Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/BAKPIA JOGKEM.png" alt="BAKPIA JOGKEM Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/BALE SILVER.png" alt="BALE SILVER Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/BECROW SHOES.png" alt="BECROW SHOES Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/BENGKEL TG.png" alt="BENGKEL TG Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/BMT BIF.png" alt="BMT BIF Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/BPRS BDW.png" alt="BPRS BDW Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/BRI WUKIRSARI.png" alt="BRI WUKIRSARI Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/BWM ALMUNA.png" alt="BWM ALMUNA Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/DINAS PERTANIAN DIY.png" alt="DINAS PERTANIAN DIY Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/DIPERPAUTKAN BANTUL.png" alt="DIPERPAUTKAN BANTUL Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/DSDL MUERTOS.png" alt="DSDL MUERTOS Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/GALAXY XUPING.png" alt="GALAXY XUPING Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/GALLERY SILVER.png" alt="GALLERY SILVER Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/GUDANG WARNA.png" alt="GUDANG WARNA Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/GUDEG PEDES MBAH JO.png" alt="GUDEG PEDES MBAH JO Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/JESSICA SILVER.png" alt="JESSICA SILVER Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/KALURAHAN BANGUNJIWO.png" alt="KALURAHAN BANGUNJIWO Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/LANGGENG BUDOYO.png" alt="LANGGENG BUDOYO Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/LAZISMU BERBAH.png" alt="LAZISMU BERBAH Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/MTSN 9 BANTUL.png" alt="MTSN 9 BANTUL Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/PIA SARIAHMAH.png" alt="PIA SARIAHMAH Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/SATE CAK HARUN.png" alt="SATE CAK HARUN Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/SEPOKAT.png" alt="SEPOKAT Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/SLB TRIMULYO.png" alt="SLB TRIMULYO Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/SMAIT ABUBAKAR.png" alt="SMAIT ABUBAKAR Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/SMTI.png" alt="SMTI Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/SURYA SILVER.png" alt="SURYA SILVER Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/TERAS KOPI.png" alt="TERAS KOPI Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/TOKO EMAS MERAK.png" alt="TOKO EMAS MERAK Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/TUNAS MULYA UPY.png" alt="TUNAS MULYA UPY Logo" class="h-full w-auto object-contain">
+                    </div>
+
+                    <!-- Duplicate set for seamless scrolling -->
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/AUTHEEZ BRAND.png" alt="AUTHEEZ BRAND Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/BAKPIA JOGKEM.png" alt="BAKPIA JOGKEM Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/BALE SILVER.png" alt="BALE SILVER Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/BECROW SHOES.png" alt="BECROW SHOES Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/BENGKEL TG.png" alt="BENGKEL TG Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/BMT BIF.png" alt="BMT BIF Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/BPRS BDW.png" alt="BPRS BDW Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/BRI WUKIRSARI.png" alt="BRI WUKIRSARI Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/BWM ALMUNA.png" alt="BWM ALMUNA Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/DINAS PERTANIAN DIY.png" alt="DINAS PERTANIAN DIY Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/DIPERPAUTKAN BANTUL.png" alt="DIPERPAUTKAN BANTUL Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/DSDL MUERTOS.png" alt="DSDL MUERTOS Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/GALAXY XUPING.png" alt="GALAXY XUPING Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/GALLERY SILVER.png" alt="GALLERY SILVER Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/GUDANG WARNA.png" alt="GUDANG WARNA Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/GUDEG PEDES MBAH JO.png" alt="GUDEG PEDES MBAH JO Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/JESSICA SILVER.png" alt="JESSICA SILVER Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/KALURAHAN BANGUNJIWO.png" alt="KALURAHAN BANGUNJIWO Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/LANGGENG BUDOYO.png" alt="LANGGENG BUDOYO Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/LAZISMU BERBAH.png" alt="LAZISMU BERBAH Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/MTSN 9 BANTUL.png" alt="MTSN 9 BANTUL Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/PIA SARIAHMAH.png" alt="PIA SARIAHMAH Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/SATE CAK HARUN.png" alt="SATE CAK HARUN Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/SEPOKAT.png" alt="SEPOKAT Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/SLB TRIMULYO.png" alt="SLB TRIMULYO Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/SMAIT ABUBAKAR.png" alt="SMAIT ABUBAKAR Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/SMTI.png" alt="SMTI Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/SURYA SILVER.png" alt="SURYA SILVER Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/TERAS KOPI.png" alt="TERAS KOPI Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/TOKO EMAS MERAK.png" alt="TOKO EMAS MERAK Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4">
+                        <img src="MATERI/LOGO CLIENT/TUNAS MULYA UPY.png" alt="TUNAS MULYA UPY Logo" class="h-full w-auto object-contain">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- KONTAK -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Kami</h2>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Lokasi</h3>
+                            <p>Linear Creative Yogyakarta (Percetakan Online Jogja), RT.04, Tegal Senggotan, Tirtonirmolo, Kec. Kasihan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55181</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h3>WhatsApp</h3>
+                            <p>0812-2222-2222</p>
+                            <a href="https://wa.me/6281222222222?text=Halo%20Linear%20Creative,%20saya%20ingin%20konsultasi%20tentang%20jasa%20percetakan" 
+                               class="contact-link" target="_blank">Kirim Pesan</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-store"></i>
+                        <div>
+                            <h3>Shopee</h3>
+                            <p>linearcreative</p>
+                            <a href="https://shopee.co.id/linearcreative" class="contact-link" target="_blank">Kunjungi Toko</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <h3>Media Sosial</h3>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/linearcreactive/" target="_blank" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://facebook.com/linearcreative" target="_blank" aria-label="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://tiktok.com/@linearcreative" target="_blank" aria-label="TikTok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-map">
+                    <iframe src="https://maps.google.com/maps?q=Linear+Creative+Yogyakarta,+RT.04,+Tegal+Senggotan,+Tirtonirmolo,+Kec.+Kasihan,+Kabupaten+Bantul,+Daerah+Istimewa+Yogyakarta+55181&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Linear Creative</h3>
+                    <p>Percetakan Online & Jasa Desain Kreatif di Jogja. Melayani berbagai kebutuhan cetak dengan cepat, terjangkau, dan profesional.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Menu Cepat</h4>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#services">Layanan</a></li>
+                        <li><a href="#portfolio">Portofolio</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Kontak</h4>
+                    <p><i class="fab fa-whatsapp"></i> 0812-2222-2222</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Yogyakarta, Indonesia</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Linear Creative. All rights reserved.</p>
+                <p>Website by Linear Creative Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>

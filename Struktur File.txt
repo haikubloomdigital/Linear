@@ -1,0 +1,11 @@
+linear-creative/
+├── index.html
+├── style.css
+├── script.js
+├── assets/
+│   ├── images/
+│   │   ├── logo-placeholder.png
+│   │   ├── portfolio-1.jpg
+│   │   └── ...
+│   └── icons/
+└── README.md
